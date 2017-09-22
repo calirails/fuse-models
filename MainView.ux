@@ -1,0 +1,20 @@
+<App>
+    <JavaScript File="viewmodel.js" />
+    <JavaScript>
+        var App = require("app");
+
+        module.exports = {
+            title: "Start Here"
+            , caption: App.appCaption
+        };
+    </JavaScript>
+
+    <ClientPanel>
+        <StackPanel Alignment="VerticalCenter">
+            <Text>{title}</Text>
+            <Text>{caption}</Text>
+            <Text>{numbers}</Text>
+            <Text>{letters}</Text>
+        </StackPanel>
+    </ClientPanel>
+</App>
